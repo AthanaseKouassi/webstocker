@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html  xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+    <head>
+        <title>Webstocker-Articles</title>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>       
+        <link rel="stylesheet" type="text/css" th:href="@{/css/bootstrap-theme.min.css}"/>
+        <link rel="stylesheet" type="text/css" th:href="@{/css/bootstrap.min.css}"/>       
+        <script th:src="@{/js/bootstrap.min.js}"></script>
+        <script th:src="@{/js/jquery-1.11.3.min.js}"></script>
+    </head>
+    <body>
+        <div class="container">
+            <header class="row">
+                <div class="col-lg-12">
+                    Entete
+                </div>
+            </header>
+            <div class="row">
+                <nav class="col-lg-2">
+                    <ul >
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="#">Caisse</a>
+                            <ul>
+                                <li><a href="#">Caisse</a></li>
+                                <li><a href="#">Réglement client</a></li>
+                                <li><a href="#">Cahier de credit</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Facturation </a>
+                            <ul class="niveau2">
+                                <li><a href="#">Editer une facture</a></li>
+                                <li><a href="#">Editer un bon de sortie</a></li>
+                                <li><a href="#">Editer un bon de commande</a></li>
+                                <li><a href="#">Supprimer une facture</a></li>
+                                <li><a href="#">supprimer unbon de sortie</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Balance</a></li>
+                        <li><a href="#">Stock</a>
+                            <ul class="niveau2">
+                                <li><a href="#">Rechercher un article</a></li>
+                                <li><a href="#">Approvisionner</a></li>
+                                <li><a href="#">Créer un nouveau fournisseur</a></li>
+                                <li><a href="#">Créer une nouvelle catégorie article</a></li>
+                                <li><a href="#">Historique d'un article</a></li>								
+                            </ul>
+                        </li>
+                        <li><a href="#">Paramètres</a>
+                            <ul >
+                                <li><a href="#">Créer un nouvel utilisateur</a></li>
+                            </ul>
+                        </li>						
+                    </ul>	
+                </nav>
+                <section class="col-lg-10" layout:fragment="content">
+                    Bienvenue !!!
+                </section>
+            </div>
+            <footer class="row">
+                Athanase Kouassi Copyright - Tous droits reservés &copy; 2015
+            </footer>
+        </div>
+
+        <!--        <div id="container"> 
+                    <div id="header"> </div>
+                    <div id="nav"> 
+                        <form id="rechercheForm" method="post" action="#"> 
+                            <label class="elrecherche" for="trouvArt">Rechercher </label> 
+                            <input class="elrecherche" type="search" name="trouveArticle" id="trouvArt" placeholder="Article"/>
+                            
+                        </form>
+                    </div>
+                    <div id="corps">
+                        <div id="menu" >					
+                            <ul id="mvertical">
+                                <li><a href="index.html">Accueil</a></li>
+                                <li><a href="index.html">Caisse</a>
+                                    <ul class="niveau2">
+                                        <li><a href="#">Caisse</a></li>
+                                        <li><a href="#">Réglement client</a></li>
+                                        <li><a href="#">Cahier de credit</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="index.html">Facturation </a>
+                                    <ul class="niveau2">
+                                        <li><a href="#">Editer une facture</a></li>
+                                        <li><a href="#">Editer un bon de sortie</a></li>
+                                        <li><a href="#">Editer un bon de commande</a></li>
+                                        <li><a href="#">Supprimer une facture</a></li>
+                                        <li><a href="#">supprimer unbon de sortie</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="index.html">Balance</a></li>
+                                <li><a href="index.html">Stock</a>
+                                    <ul class="niveau2">
+                                        <li><a href="#">Rechercher un article</a></li>
+                                        <li><a href="#">Approvisionner</a></li>
+                                        <li><a href="#">Créer un nouveau fournisseur</a></li>
+                                        <li><a href="#">Créer une nouvelle catégorie article</a></li>
+                                        <li><a href="#">Historique d'un article</a></li>								
+                                    </ul>
+                                </li>
+                                <li><a href="index.html">Paramètres</a>
+                                    <ul class="niveau2">
+                                        <li><a href="#">Créer un nouvel utilisateur</a></li>
+                                    </ul>
+                                </li>						
+                            </ul>							
+                        </div>
+        
+                        <div id="contenu" layout:fragment="content">
+                            Bienvenue !!!
+                                                                
+                        </div>
+                        
+                    </div>	
+                    <div id="footer"> Athanase Kouassi Copyright - Tous droits reservés &copy; 2015</div>
+                </div>	-->
+    </body>
+</html>

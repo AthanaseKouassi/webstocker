@@ -1,0 +1,257 @@
+/* 
+    Created on : 22 mai 2015, 13:52:49
+    Author     : Athanase
+*/
+
+
+#conteneur
+{
+	margin:auto;
+	width: 1172px;
+}
+
+body
+{
+	background-image: url("../img/body.png");	
+}
+
+#header
+{
+	background-image: url("../img/banniere.jpg");	
+	width: 1171px;
+	height: 222px;	
+}
+
+#nav
+{		
+	background-image: url("../img/aw3_nav.jpg");
+	width: 1131px;
+	height: 70px;
+	text-align: right;
+	font-size: 1.2em;
+	padding-top: 30px;
+	padding-right:40px;
+	
+}
+/* la balise input de l'id nav*/
+#nav input
+{
+	border: 1px solid orange;
+	width: 300px;
+	padding:4px;
+	-moz-border-radius:  10px;
+	-webkit-border-radius:10px;
+	border-radius: 10px;
+}
+
+#nav label
+{
+	color:white;
+}
+.elrecherche
+{
+	display:inline-block;
+	margin-top: 5px;
+}
+
+
+#corps
+{ 		
+	background-image: url("../img/aw3_corps.jpg");
+	background-repeat: repeat-y;	
+	width: 1172px;
+}
+
+#menu 
+{
+	float:left;
+	display:inline-block;
+	width: 253px;		
+	padding-left: 20px;
+	padding-right:20px;
+	margin-left: 2px;
+	margin-right: 2px;
+}
+
+/*****************Le MENU ET LES SOUS-MENUS************/
+ul#mvertical 
+{
+	margin:1px; /* Marge extérieur nulle */ 
+    padding:1px; /* Marge intérieur à 1px sauf pour le bas */ 
+    width:270px; /* Largeur de notre liste */ 
+    font-size:1.4em; /* Taille de notre police */ 
+    /*border:1px solid #39C; /* Application d'une bordure */ 
+}
+ul.niveau2
+{
+	margin:1px; /* Marge extérieur nulle */ 
+    padding:1px; /* Marge intérieur à 1px sauf pour le bas */ 
+    width:280px; /* Largeur de notre liste */ 
+    font-size:0.9em; /* Taille de notre police */ 
+}
+
+ 
+li 
+{
+	list-style-type:none; /* Aucunes puces associées */ 
+    margin-bottom:1px; /* Ajout d'une marge en bas du lien */ 
+	position: relative;
+	
+}
+
+#mvertical ul.niveau2
+{
+	display: none;
+	position: absolute;
+	
+}
+
+/*personnnalisons les liens*/
+#mvertical li a, ul.niveau2 li a
+{
+	width:auto !important; /* Largeur interprétée par tous les navigateurs excepté 
+    IE6 et inférieur */ 
+    width:100%; /* largeur interprétée par IE6 et inférieur */ 
+    padding:4px; /* Définition des marges intérieures */ 
+    text-decoration:none; /* Suppression du soulignement */ 
+	display:block; /* Définition sous forme de block */ 
+    color:#ffffff; /* Couleur de la police */     
+   /* background-color:#F5FBFF; /* Définition de la couleur de fond */ 
+   /* border:1px solid #3399CC; /* Ajout d'une bordure */ 
+    /*border-left-width:4px; /* Modification de la bordure gauche */
+	
+}
+
+ul#mvertical li a:link
+{
+	color:#ffffff; /* Couleur de la police */ 
+    background-color:#F5FBFF; /* Définition de la couleur de fond */ 
+    border:1px solid #d3e6ef; /* Ajout d'une bordure */ 
+    border-left-width:4px; /* Modification de la bordure gauche */ 
+}
+
+ul#mvertical li a:visited
+{
+	color:#ffffff; /* Changement de la couleur de la police initiale */ 
+    background-color:#769ec4; /* Changement de la couleur de fond initiale */ 
+    border:1px solid #c0f3eb; /* Ajout d'une bordure */ 
+    border-left-width:4px; /* Modification de la bordure gauche */ 
+}
+
+ul#mvertical li a:hover
+{
+	color:#993; /* Changement de la couleur de la police initiale */ 
+    background-color:#f4fbdc; /* Changement de la couleur de fond initiale */ 
+    border:1px solid #993; /* Ajout d'une bordure */ 
+    border-left-width:4px; /* Modification de la bordure gauche */
+	display:block;
+}
+
+ul#mvertical li a:active
+{
+	color:#FFC300; /* Changement de la couleur de la police initiale */ 
+    background-color:#FDFFA5; /* Changement de la couleur de fond initiale */ 
+    border:1px solid #FFC300; /* Ajout d'une bordure */ 
+    border-left-width:4px; /* Modification de la bordure gauche */ 
+}
+ul#mvertical li:hover  ul.niveau2 
+{
+	display:block;
+	position:absolute;
+	left:267px;
+	top:0px;
+}
+#contenu
+{
+	width:822px;
+	border:1px solid #086ec0;
+	margin-left:310px;
+	cursor: auto;
+}
+
+
+h2
+{
+	color: blue;
+	text-align: center;	
+	cursor: auto;
+	text-decoration:none;
+}
+
+#myform
+{
+	width:650px;
+	margin:auto;
+	border:1px solid #086ec0;
+	-moz-box-shadow:8px 8px 8px #aaaaaa;
+	-webkit-box-shadow:8px 8px 8px #aaaaaa;
+	box-shadow: 8px 8px 8px #aaaaaa;
+	cursor: default;
+}
+
+#myform a:hover 
+{
+	cursor: default;
+	
+}
+#myform p 
+{
+	margin-top: 5px;
+	padding-left: 5px;
+}
+#myform label
+{
+	display:inline-block;
+	width: 130px;
+	color: black;
+}
+
+#myform input[type="text"],input[type="number"] 
+{
+	width:350px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	border: 1px solid gray;
+}
+
+#myform input[type="submit"] 
+{
+	width: auto;
+	padding: 4px 15px;
+	background: #555;
+	color: #fff;
+	cursor: pointer;
+	text-decoration: none;
+	font-size: 100%;
+	background: #576E94;
+	
+	text-shadow: 0 0 1px #123; /* ombrage du texte (pas de préfixe) */
+	-webkit-border-radius: 4px; /* coins arrondis */
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	-webkit-box-shadow: #999 1px 2px 3px; /* ombrage de boîte */
+	-moz-box-shadow: #999 1px 2px 3px;
+	box-shadow: #999 1px 2px 3px;
+	/*behavior: url(PIE.htc); /* ombrages et arrondis pour IE */ 
+
+	background: #576E94;
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#D3DAE9), to(#576E94));
+	/* anciennes versions de WebKit */
+	background: -webkit-linear-gradient(#D3DAE9, #576E94); /* depuis Chrome 10 */
+	background: -moz-linear-gradient(#D3DAE9, #576E94); /* Firefox */
+	background: linear-gradient(#D3DAE9, #576E94);
+	/*-pie-background: linear-gradient(#D3DAE9, #576E94);*/
+}
+
+#footer
+{
+	background-image: url("../img/aw3_bas_page.jpg");
+	width: 1172px;
+	height:4px;		
+	padding-top: 11px;
+	color: blue;
+	font-size: 0.9em;
+	text-decoration:none;
+	text-align: center;
+}

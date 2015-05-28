@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html  xmlns:th="http://www.thymeleaf.org" 
+       xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" 
+       layout:decorator="layout">
+    <head>
+        <title>Webstocker-Articles</title>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" type="text/css" th:href="@{/css/bootstrap-theme.min.css}"/>
+        <link rel="stylesheet" type="text/css" th:href="@{/css/bootstrap.min.css}"/>       
+        <script th:src="@{/js/bootstrap.min.js}"></script>
+        <script th:src="@{/js/jquery-1.11.3.min.js}"></script>
+    </head>
+    <body>
+        
+        <section class="col-lg-10" layout:fragment="content">
+            <h2>Articles</h2>
+            <form  method="post" action="#" th:object="${article}" >
+                <p>
+                    <label for="reference"> Reférence :</label>
+                    <input type="text" th:field="*{reference}" />
+                </p>
+                <p>
+                    <label for="designation">Désignation :</label>
+                    <input type="text" th:field="*{libelleArticle}" /> 
+                </p>
+                <p>
+                    <label for="prixunit">Prix unitaire :</label>
+                    <input type="number" th:field="*{prixVente}" />
+                </p>
+                <p>
+                    <label for="prixachat">Prix de revient:</label>
+                    <input type="number" th:field="*{prixAchat}" />
+                </p>
+                <p>
+                    <label for="qtestock">Quantité en stock :</label>
+                    <input type="number" th:field="*{quantiteEnStock}" />
+                </p>
+                <p>
+                    <label for="datecrea">Date de création :</label>
+                    <input type="text" th:field="*{dateCreation}" /> 
+                </p>
+                <p>
+                    <label for="categorie">Catégorie :</label>
+                    <input type="text" th:field="*{categorieArticle}" />
+                </p>
+                <p>
+                    <input type="submit" value="Enregistrer" />
+                </p>
+            </form>  
+            <br/>
+        </section>
+            	
+    </body>
+</html>
